@@ -1,0 +1,70 @@
+\documentclass[11pt,a4paper]{report}
+\usepackage{fancyhdr}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=cyan, citecolor=green,filecolor=black,urlcolor=blue}
+\usepackage{epstopdf}
+\usepackage{makeidx}
+\usepackage{tocloft}
+\renewcommand{\cftchapleader}{\cftdotfill{\cftdotsep}}
+\renewcommand{\contentsname}{Cuprins}
+\renewcommand{\bibname}{B\lowercase{ibliografie}}
+\renewcommand{\chaptername}{Capitol}
+\renewcommand{\appendixname}{Anexa}
+\renewcommand{\indexname}{I\lowercase{indice}}
+\pagestyle{fancy}
+\makeindex
+\newtheorem{prop}{Propozi\c tie}
+\newenvironment{demo}{\paragraph{\textbf{Demonstra\c{t}ie}:}}{\hfill$\square$}
+\newcommand{\R}{\mathbb{R}}
+\begin{document}
+\begin{center}
+\begin{tabular}{ |p{2.9cm}|p{2cm}|p{6cm}|  }
+	
+ \hline
+ \multicolumn{3}{|c|}{MiniGPS} \\
+ \hline
+
+  Variabile & Tipul & Descriere\\
+ \hline
+
+ $bNGraph$        & $CButton$   & Buton pentru generarea unui nou graf\vspace{0.1cm}  \\
+ \hline
+ $BCompute$       & $CButton$   & Compune cel mai scurt drum\vspace{0.1cm} \\
+ \hline
+ $Autobuz[i].path[k]$ & $int$       & Drumul $k$ \^ in autobuzul $i$\vspace{0.1cm} \\
+ \hline
+ $Autobuz[i].nNod$  & $int$       & Num\u arul de noduri \^ in autobuzul $i$ \vspace{0.1cm}\\
+ \hline
+ $Autobuz[i].sp$      & $int$       & Costul total al autobuzului $i$\vspace{0.1cm}\\
+ \hline
+ $home$           & $CPonit$    & Col\c tul din st\^ anga sus al zonei grilei dreptunghiului \vspace{0.1cm}   \\
+ \hline
+ $v[i].cost[j]$     & $int$       & Costul dintre $(v_{i}, v_{j})$\vspace{0.1cm}\\
+ \hline
+ $v[i].sp[j]$     & $int$       & Drumul cel mai scurt dintre $(v_{i}, v_{j})$\vspace{0.1cm}\\
+ \hline
+ $Pv$             & $int$       & Nodul precedent al nodului curent\vspace{0.1cm}\\
+ \hline
+ $Sursa, \newline Destinatie$         & $int$       & Sursa \c si destina\c tia\vspace{0.1cm}\\
+ \hline
+ $nBus$           & $int$       & Numarul de autobuze de succes\vspace{0.1cm}\\
+ \hline
+ $table$          & $CListCtrl$ & Tabela care afi\c seaz\u a autobuzele de succes\vspace{0.1cm}\\
+ \hline
+ $pBus[i]$        & $CPen$      & Culoarea autobuzului i\vspace{0.1cm}\\
+ \hline
+ $N$              & $constant$  & Num\u arul de noduri \^ in graf\vspace{0.1cm}\\
+ \hline
+ $LinkRange$      & $constant$  & Valoarea pragului intervalului pentru adiacen\c ta dintre dou\u anoduri din grafic\vspace{0.1cm}\\
+ \hline
+ $fv[i]$          & $bool$      & Starea v\^ arfului $v_{i}$\vspace{0.1cm}\\
+ 
+ \hline
+\end{tabular}
+
+\end{center}
+\end{document}
